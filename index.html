@@ -133,6 +133,10 @@
   @media (prefers-reduced-motion: reduce) { .win-celebration { display:none !important; } }
 
 
+
+  /* Home screen: do not expose the table canvas behind the menu. */
+  body.home-mode #tableStage { display:none !important; }
+  body.home-mode .demo { width:min(760px, calc(100vw - 36px)); }
 </style>
 </head>
 <body>
